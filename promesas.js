@@ -76,7 +76,7 @@ vacaciones
 
 
 /*
-Promise.all ejecutará todas las promesas y en cuantio termine mostrará el resultado
+//Promise.all ejecutará todas las promesas y mostrará el resultado hasta que todas terminen, si alguna falla ahí muestra el error y el resto no se ejecutará.
 Promise.all([
 	getStatus, 
 	diasSemana, 
@@ -89,7 +89,7 @@ Promise.all([
 
 
 /*
-Promise.race ejecutará solamente la Promesa que primero se resuelva
+//Promise.race ejecutará solamente la Promesa que primero se resuelva sea exitosa o fallida
 Promise.race([
 	getStatus,
 	diasSemana,
